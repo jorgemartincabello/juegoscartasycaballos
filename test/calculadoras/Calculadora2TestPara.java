@@ -43,15 +43,7 @@ public class Calculadora2TestPara {
     /**
      * Test of modulo method, of class Calculadora2.
      */
-    @Test
-    public void testModulo() {
-        System.out.println("modulo");
-        
-        Calculadora2 instance = new Calculadora2();
-        double result = instance.modulo(numero1, numero2);
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
+   
+  
     
 }

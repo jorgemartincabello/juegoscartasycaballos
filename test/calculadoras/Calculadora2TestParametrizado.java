@@ -36,16 +36,7 @@ public class Calculadora2TestParametrizado {
     return Arrays.asList(data);
   } 
     
-    @Test
-    public void testModulo() {
-        System.out.println("modulo");
-     
-        Calculadora2 instance = new Calculadora2();
-       
-        double result = instance.modulo(numero1, numero2);
-        assertEquals(expResult, result, 0.0);
-      
-    }
+    
     
     @Test
     public void testSuma() {
