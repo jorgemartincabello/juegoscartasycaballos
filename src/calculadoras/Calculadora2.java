@@ -14,8 +14,6 @@ public class Calculadora2 {
     public Calculadora2() {
     }
     
-    public double modulo(double numero1, double numero2){
-        return numero1 % numero2;
-    }
+    
     
 }
