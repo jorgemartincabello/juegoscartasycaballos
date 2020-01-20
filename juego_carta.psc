@@ -1,4 +1,6 @@
 
+// comentario de modificación
+
 funcion figura<-muestra_figura(n)
 	definir figura como texto;
 	segun n hacer
