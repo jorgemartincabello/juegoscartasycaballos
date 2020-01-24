@@ -1,5 +1,6 @@
 
-// comentario de modificación
+// comentario de modificaciÃ³n
+// modificado para pruebas 
 
 funcion figura<-muestra_figura(n)
 	definir figura como texto;
@@ -34,13 +35,13 @@ funcion apuesta_valida<-apostar_dinero(limite)
 	definir apuesta_valida,ap como entero;
 	escribir "Tu dinero disponible para jugar es :" limite;
 	Repetir
-		Escribir " Introduce tu apuesta.. m�nimo 50 y m�ximo " limite;
+		Escribir " Introduce tu apuesta.. mínimo 50 y máximo " limite;
 		leer ap;
 		si ap>limite entonces 
-			escribir " apuesta no v�lida , es mayor que tu dinero (" limite ")";
+			escribir " apuesta no válida , es mayor que tu dinero (" limite ")";
 		FinSi
 		si ap<50 Entonces
-			escribir " apuesta no v�lida , debe ser mayor o igual que 50";
+			escribir " apuesta no válida , debe ser mayor o igual que 50";
 		FinSi
 		si ap>=50 y ap<=limite Entonces
 			apuesta_valida<-ap;
