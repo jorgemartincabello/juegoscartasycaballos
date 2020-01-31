@@ -1,4 +1,9 @@
 
+
+
+// comentario de modificaciÃ³n
+// modificado para pruebas 
+
 funcion figura<-muestra_figura(n)
 	definir figura como texto;
 	segun n hacer
@@ -24,13 +29,20 @@ funcion palo<-muestra_palo(n)
 		2: palo<- " de Oros ";
 		3: palo<- " de Copas ";
 		4: palo<- " de Bastos ";
+<<<<<<< HEAD
 	FinSegun
 	
 FinFuncion
+=======
+	FinSegun
+	
+FinFuncion
+>>>>>>> f1244c7f9aa96f4df636c81b06586885fda69406
 
 funcion apuesta_valida<-apostar_dinero(limite)
 	definir apuesta_valida,ap como entero;
 	escribir "Tu dinero disponible para jugar es :" limite;
+<<<<<<< HEAD
 	Repetir
 		Escribir " Introduce tu apuesta.. m�nimo 50 y m�ximo " limite;
 		leer ap;
@@ -46,6 +58,23 @@ funcion apuesta_valida<-apostar_dinero(limite)
 	hasta que apuesta_valida=ap
 	
 FinFuncion
+=======
+	Repetir
+		Escribir " Introduce tu apuesta.. mínimo 50 y máximo " limite;
+		leer ap;
+		si ap>limite entonces 
+			escribir " apuesta no válida , es mayor que tu dinero (" limite ")";
+		FinSi
+		si ap<50 Entonces
+			escribir " apuesta no válida , debe ser mayor o igual que 50";
+		FinSi
+		si ap>=50 y ap<=limite Entonces
+			apuesta_valida<-ap;
+		FinSi
+	hasta que apuesta_valida=ap
+	
+FinFuncion
+>>>>>>> f1244c7f9aa96f4df636c81b06586885fda69406
 
 funcion ap<-apostar_mayormenor()
 	definir ap como entero;
@@ -61,11 +90,19 @@ funcion ganado<-comprueba_gana(ncarta1, ncarta2, apuesta_mayormenor)
 		escribir " La segunda carta es mayor que la primera";
 		si apuesta_mayormenor=1 entonces 
 			ganado <- verdadero;
+<<<<<<< HEAD
 		SiNo
 			ganado <- falso;
 		FinSi
 	FinSi
 	
+=======
+		SiNo
+			ganado <- falso;
+		FinSi
+	FinSi
+	
+>>>>>>> f1244c7f9aa96f4df636c81b06586885fda69406
 	si ncarta1>ncarta2 entonces
 		escribir " La segunda carta es menor que la segunda";
 		si apuesta_mayormenor=1 entonces 
@@ -73,12 +110,21 @@ funcion ganado<-comprueba_gana(ncarta1, ncarta2, apuesta_mayormenor)
 		SiNo
 			ganado <- verdadero;
 		FinSi
+<<<<<<< HEAD
 	FinSi
 	
 FinFuncion
 funcion sale<-salir(dinero)
 	definir sale como logico;
 	definir jugar como texto;
+=======
+	FinSi
+	
+FinFuncion
+funcion sale<-salir(dinero)
+	definir sale como logico;
+	definir jugar como texto;
+>>>>>>> f1244c7f9aa96f4df636c81b06586885fda69406
 	si dinero<50 
 		sale<-verdadero;
 		escribir "... lo sentimos no te queda dinero para jugar.... hasta otra perdedor..";
@@ -91,9 +137,15 @@ funcion sale<-salir(dinero)
 			limpiar pantalla;
 		FinSi
 	FinSi
+<<<<<<< HEAD
 FinFuncion
 
 Algoritmo juego_carta_mas_alta
+=======
+FinFuncion
+
+Algoritmo juego_carta_mas_alta
+>>>>>>> f1244c7f9aa96f4df636c81b06586885fda69406
 	
 	definir ncarta1, npalo1,ncarta2,npalo2, dinero, apuesta_dinero, apuesta_mayormenor como entero;
 	definir gana como logico;
@@ -126,14 +178,21 @@ Algoritmo juego_carta_mas_alta
 		si ncarta1==ncarta2 entonces
 			escribir " ... las dos cartas son de igual rango.. partida nula";
 		sino
+<<<<<<< HEAD
 			gana<-comprueba_gana(ncarta1, ncarta2, apuesta_mayormenor);
 			si gana Entonces
 				escribir " .... has ganado!!!!!";
+=======
+			gana<-comprueba_gana(ncarta1, ncarta2, apuesta_mayormenor);
+			si gana Entonces
+				escribir " .... has ganado!!!!!";
+>>>>>>> f1244c7f9aa96f4df636c81b06586885fda69406
 				dinero<-dinero+apuesta_dinero;
 			sino
 				escribir "..oohhhh.. lo sentimos has perdido...";
 				dinero<-dinero-apuesta_dinero;
 			FinSi
+<<<<<<< HEAD
 			escribir " Tu dinero ahora es de: " dinero;
 		Finsi
 		
@@ -144,3 +203,15 @@ Algoritmo juego_carta_mas_alta
 	Escribir " Gracias por jugar... hasta otra partida";
 	
 FinAlgoritmo
+=======
+			escribir " Tu dinero ahora es de: " dinero;
+		Finsi
+		
+		
+		
+	hasta que salir(dinero)
+	
+	Escribir " Gracias por jugar... hasta otra partida";
+	
+FinAlgoritmo
+>>>>>>> f1244c7f9aa96f4df636c81b06586885fda69406

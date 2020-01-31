@@ -1,0 +1,3 @@
+archivo nuevo de texto
+linea2
+añado linea 3 en local
